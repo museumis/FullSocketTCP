@@ -7,6 +7,7 @@ import java.util.Scanner;
  * 
  * @author Ismael MArtin
  *
+ * !!CLASE NO UTLILIZADA!!
  */
 public class HiloLeerMensaje implements Runnable {
 	DataInputStream flujoEntrada;

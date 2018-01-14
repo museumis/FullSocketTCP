@@ -109,13 +109,12 @@ public class Servidor {
 	 * @param flujoSalida
 	 */
 	public static void mensajesClienteServidor05(DataInputStream flujoEntrada, DataOutputStream flujoSalida) {
-		//NO FUNCIONA
-		HiloLeerMensaje leer = new HiloLeerMensaje(flujoEntrada);
 		HiloEscribirMensaje escribir = new HiloEscribirMensaje(flujoSalida);
-
-		// while (true) { }
-		new Thread(leer).start();
 		new Thread(escribir).start();
+		while(true) {
+			recibirDatosPrimitivos(flujoEntrada, flujoSalida);
+		}
+			
 
 	}// Fin de mensajes ClienteServidor
 
