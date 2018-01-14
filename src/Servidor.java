@@ -113,8 +113,7 @@ public class Servidor {
 		new Thread(escribir).start();
 		while(true) {
 			recibirDatosPrimitivos(flujoEntrada, flujoSalida);
-		}
-			
+		}			
 
 	}// Fin de mensajes ClienteServidor
 

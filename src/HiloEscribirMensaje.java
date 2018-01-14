@@ -28,7 +28,7 @@ public class HiloEscribirMensaje implements Runnable {
 				// System.out.println("\n***EL HILO DE ESCRITURA falló al ENVIAR UnSTRING\n");
 				// e.printStackTrace();
 			}
-			System.out.print("\t+[Yo]: " + mensaje);
+			System.out.println("\t+[Yo]: " + mensaje);
 			
 		
 		

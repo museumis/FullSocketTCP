@@ -75,9 +75,7 @@ public class Cliente {
 		new Thread(escribir).start();
 		while(true) {
 			recibirDatosPrimitivos(flujoEntrada, flujoSalida);
-		}
-		
-		
+		}			
 
 	}// Fin de mensajes Cliente Servidor
 
